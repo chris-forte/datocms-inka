@@ -1,16 +1,12 @@
-# Inka Website
+# Inka Marketing Website
 
 This repo contains a static website written with [GatsbyJS](https://www.gatsbyjs.org/), integrated with content coming from [DatoCMS](https://www.datocms.com).
 
 ![Preview](preview.png)
 
-[See the live demo](https://cranky-edison-12166d.netlify.com/)
+[See the live demo](https://inka.netlify.com/)
 
-If you want to use try this out yourself, you first need to set up a project on DatoCMS which will host your data.
-
-You can [sign up for a free account](https://dashboard.datocms.com/signup) and then you can simply click this button:
-
-[![Deploy with DatoCMS](https://dashboard.datocms.com/deploy/button.svg)](https://dashboard.datocms.com/projects/new-from-template/static-website/gatsby-portfolio)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ce223513-8afc-4d41-a653-e600a1582e09/deploy-status)](https://app.netlify.com/sites/inka/deploys)
 
 ## Repo usage
 
