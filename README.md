@@ -1,4 +1,4 @@
-# Gatsby Portfolio Website
+# Inka Website
 
 This repo contains a static website written with [GatsbyJS](https://www.gatsbyjs.org/), integrated with content coming from [DatoCMS](https://www.datocms.com).
 
@@ -48,6 +48,6 @@ You can find further information about how to integrate DatoCMS with Gatsby in [
 
 This websites uses:
 
-* [Yarn](https://yarnpkg.com/) as package manager;
-* [GatsbyJS](https://github.com/gatsbyjs/gatsby) as website generator;
-* [gatsby-source-datocms](https://github.com/datocms/gatsby-source-datocms) to integrate the website with DatoCMS.
+- [Yarn](https://yarnpkg.com/) as package manager;
+- [GatsbyJS](https://github.com/gatsbyjs/gatsby) as website generator;
+- [gatsby-source-datocms](https://github.com/datocms/gatsby-source-datocms) to integrate the website with DatoCMS.
