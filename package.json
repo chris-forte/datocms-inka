@@ -4,8 +4,9 @@
   "version": "1.0.0",
   "author": "Stefano Verna <s.verna@datocms.com>",
   "dependencies": {
+    "bootstrap": "^4.4.1",
     "dotenv": "^8.1.0",
-    "gatsby": "^2.15.30",
+    "gatsby": "^2.18.10",
     "gatsby-image": "^2.2.24",
     "gatsby-plugin-react-helmet": "^3.1.10",
     "gatsby-plugin-sass": "^2.1.17",
@@ -14,6 +15,7 @@
     "gatsby-transformer-remark": "^2.6.27",
     "node-sass": "^4.11.0",
     "react": "^16.10.2",
+    "react-bootstrap": "^1.0.0-beta.16",
     "react-dom": "^16.10.2",
     "react-helmet": "^5.2.0",
     "react-masonry-component": "^6.2.1",
