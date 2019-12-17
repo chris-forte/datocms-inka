@@ -7,33 +7,42 @@ import Layout from "../components/layout";
 import Container from "react-bootstrap/Container";
 export default ({ data }) => (
   <Layout>
-    <article className="sheet">
-      <HelmetDatoCms seo={data.datoCmsPost.seoMetaTags} />
-      <div className="sheet__inner">
-        <h1 className="sheet__title">{data.datoCmsPost.title}</h1>
-        <p className="sheet__lead">{data.datoCmsPost.excerpt}</p>
-        <div className="sheet__slider">
-          <Slider infinite={true} slidesToShow={2} arrows>
-            {data.datoCmsPost.gallery.map(({ fluid }) => (
-              <img
-                alt={data.datoCmsPost.title}
-                key={fluid.src}
-                src={fluid.src}
-              />
-            ))}
-          </Slider>
+    <Container>
+      <article
+        className="sheet"
+        style={{
+          width: "100%",
+          "background-color": "#f3f3f3",
+          paddingLeft: "0px"
+        }}
+      >
+        <HelmetDatoCms seo={data.datoCmsPost.seoMetaTags} />
+        <div className="sheet__inner" style={{ width: "100%" }}>
+          <h1 className="sheet__title">{data.datoCmsPost.title}</h1>
+          <p className="sheet__lead">{data.datoCmsPost.excerpt}</p>
+          <div className="sheet__slider">
+            <Slider infinite={true} slidesToShow={2} arrows>
+              {data.datoCmsPost.gallery.map(({ fluid }) => (
+                <img
+                  alt={data.datoCmsPost.title}
+                  key={fluid.src}
+                  src={fluid.src}
+                />
+              ))}
+            </Slider>
+          </div>
+          <div
+            className="sheet__body"
+            dangerouslySetInnerHTML={{
+              __html: data.datoCmsPost.descriptionNode.childMarkdownRemark.html
+            }}
+          />
+          <div className="sheet__gallery">
+            <Img fluid={data.datoCmsPost.coverImage.fluid} />
+          </div>
         </div>
-        <div
-          className="sheet__body"
-          dangerouslySetInnerHTML={{
-            __html: data.datoCmsPost.descriptionNode.childMarkdownRemark.html
-          }}
-        />
-        <div className="sheet__gallery">
-          <Img fluid={data.datoCmsPost.coverImage.fluid} />
-        </div>
-      </div>
-    </article>
+      </article>
+    </Container>
   </Layout>
 );
 
