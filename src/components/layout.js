@@ -9,6 +9,7 @@ import Footer from "./Footer";
 
 import "../styles/index.sass";
 
+
 const TemplateWrapper = ({ children }) => (
   <StaticQuery
     query={graphql`

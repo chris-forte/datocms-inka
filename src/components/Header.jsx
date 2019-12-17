@@ -6,6 +6,7 @@ import Container from "react-bootstrap/Container";
 import { Helmet } from "react-helmet";
 import logo from "../assets/images/logo-black.png";
 
+
 class Header extends Component {
   constructor(props) {
     super(props);
@@ -79,12 +80,12 @@ class Header extends Component {
               >
                 <span className="">Sign Up</span>
               </Link>
-              <Nav.Link
-                href="https://indieridge.com"
-                className="btn btn--sm btn--primary type--uppercase nav_button_2"
+              <Link
+                to="/blog/"
+                className=""
               >
                 <span className="">Blog</span>
-              </Nav.Link>
+              </Link>
             </Navbar.Collapse>
           </Container>
         </Navbar>
