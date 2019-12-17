@@ -4,7 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import { Helmet } from "react-helmet";
-import logo from "../assets/images/logo-black.png";
+import logo from "../assets/images/inka-logo-black.png";
 
 class Header extends Component {
   constructor(props) {
@@ -66,7 +66,12 @@ class Header extends Component {
         >
           <Container>
             <Link to="/">
-              <img alt="Hourly Logo" className="logo" src={logo} />
+              <img
+                alt="Hourly Logo"
+                className="logo"
+                src={logo}
+                style={{ height: "35px" }}
+              />
             </Link>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse
