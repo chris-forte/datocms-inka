@@ -20,7 +20,14 @@ function MyDropzone({ sendData }) {
   const { getRootProps, getInputProps } = useDropzone({ onDrop });
 
   return (
-    <div {...getRootProps()}>
+    <div
+      {...getRootProps()}
+      style={{
+        border: "2px dashed #ccc",
+        padding: "20px",
+        background: "#f8f8f8"
+      }}
+    >
       <input {...getInputProps()} />
       <p>Drag 'n' drop some files here, or click to select files</p>
     </div>
